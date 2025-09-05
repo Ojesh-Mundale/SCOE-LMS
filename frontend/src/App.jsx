@@ -17,10 +17,12 @@ function App() {
     <Router>
       <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
-      <Sidebar sidebarOpen={sidebarOpen} />
+      <div className="fixed inset-y-0 left-0 z-50">
+        <Sidebar sidebarOpen={sidebarOpen} />
+      </div>
 
         {/* Main content */}
-        <div className="flex-1 flex flex-col">
+        <div className={`flex-1 flex flex-col transition-all duration-300 ${sidebarOpen ? 'ml-64' : 'ml-0'}`}>
           {/* Header */}
           <header className="flex items-center justify-between bg-white shadow px-4 py-3">
             <button

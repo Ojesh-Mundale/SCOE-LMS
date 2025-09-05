@@ -9,7 +9,8 @@ const Sidebar = ({ sidebarOpen }) => {
           alt="SCOE Logo"
           className="w-16 h-16 rounded-full mb-2"
         />
-        <h1 className="text-xl font-semibold text-blue-700">SCOE</h1>
+        <h1 className="text-xl font-semibold text-blue-700">SCOE LMS</h1>
+        {/* <p>Autonomous</p> */}
       </div>
       <nav className="mt-5 px-2 space-y-1">
         <NavLink
